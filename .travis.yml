@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.12
+
+git:
+  depth: 3
+
+install:
+  - go build -o sf
+
+script:
+  - go test -v -cover
